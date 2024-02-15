@@ -1,0 +1,14 @@
+@media screen and (max-width:768px){
+   header .wrap ul.gnb{    
+     display: none;
+   }
+  header div.wrap .sublist{
+    display: none;
+  }
+  header div.wrap ul.lang{
+    display: none;
+  }
+   .ham{    
+     display: flex;
+   }
+ }

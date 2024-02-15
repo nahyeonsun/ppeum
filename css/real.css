@@ -1,0 +1,52 @@
+section#real{
+
+  height: 545px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+section#real div.wrap{   
+  height: 100%;
+}
+section#real div.wrap h2{   
+
+}
+section#real div.wrap ul{
+   
+}
+section#real div.wrap ul li{
+   
+}
+section#real div.wrap ul li a{
+   
+}
+section#real div.wrap ul li a figure{  
+  position: relative;
+}
+
+section#real div.wrap ul li a figure:hover figcaption{
+  opacity: 1;
+  transition: 1s;
+  font-size: 55px
+}
+section#real div.wrap ul li a figure img{
+   
+}
+section#real div.wrap ul li a figure:hover img{
+  transform: scale(1.2);
+  transition: 1s;
+}
+section#real div.wrap ul li a figure figcaption{   
+  position: absolute;
+  top: 0;
+  background-color: rgba(245,55,122,0.8);
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 20px;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}

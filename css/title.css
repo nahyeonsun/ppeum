@@ -1,0 +1,41 @@
+#title {
+
+}
+#title .wrap{
+  height: 100%;
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 83px;
+}
+#title .wrap .slick-list{
+  height: 100%;
+}
+#title .wrap .slick-list .slick-track{
+  height: 100%;
+}
+#title .wrap .witem{
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  transition: all 3s ease-in-out !important;
+  background-repeat: no-repeat;
+}
+#title .wrap .witem1{
+  background-image: url(../img/title3.jpg);
+}
+#title .wrap .witem2{
+  background-image: url(../img/title1.jpg);
+}
+#title .wrap .witem3{
+  background-image: url(../img/title2.jpg);
+}
+#title .wrap .slick-dots{
+  bottom: 8%;
+}
+#title .wrap .slick-dots li button::before{
+  font-size: 15px;
+  color: white;
+}

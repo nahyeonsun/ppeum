@@ -1,0 +1,42 @@
+section#space {
+  overflow-x: hidden;
+}
+section#space .wrap {
+  width: 100vw;
+}
+section#space .wrap h2{   
+
+}
+section#space .wrap p {
+  font-weight: 600;
+  padding: 5px 0 30px;
+}
+section#space .wrap .background{  
+  width: 100%;
+  padding: 45px 0 55px;
+  background: #f7f6f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section#space .wrap .background ul{
+  
+}
+section#space .wrap .background ul li {
+
+}
+section#space .wrap .background ul li a {
+
+}
+section#space .wrap .background ul li a figure {
+
+}
+section#space .wrap .background ul li a figure img {
+
+}
+section#space .wrap .background ul li a figure figcaption {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 20px;
+  font-weight: 300;
+}

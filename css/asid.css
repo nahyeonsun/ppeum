@@ -1,0 +1,80 @@
+aside{
+  position: fixed;
+  right: 0px;
+  top: calc(50% - 47px);
+  transform: translateY(-50%);
+}
+aside ul{
+
+}
+aside ul li{
+  width: 90px;
+  height: 96px;
+  background-color: #fff;
+}
+aside ul li:not(:nth-child(1),:nth-child(5)) a::after{
+  content: "";
+  border-bottom: 1px solid #e0e0e0;
+  display: block;
+  width: 75%;
+ 
+}
+aside ul li:nth-child(1){
+  background-image: url(../img/rquick_bg.jpg);
+  width: 90px;
+  height: 96px;
+  background-size: contain;
+  align-self: center;
+}
+aside ul li a{   
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  flex-direction: column;
+  gap: 22px;
+  color: #7b7b7b;
+  width: 100%;
+}
+aside ul li:nth-child(1) a{   
+  color: white;
+}
+aside ul li a::before{
+  content: '';
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  transform: translateY(50%);
+}
+aside ul li:nth-child(1) a::before{
+  background-image: url(../img/rquick01.png);
+  width: 31px;
+  height: 29px;
+}
+aside ul li:nth-child(2) a::before{
+  background-image: url(../img/rquick02.png);
+  width: 29px;
+  height: 29px;
+}
+aside ul li:nth-child(3) a::before{
+  background-image: url(../img/rquick03.png);
+  width: 26px;
+  height: 34px;
+}
+aside ul li:nth-child(4) a::before{
+  background-image: url(../img/rquick04.png);
+  width: 26px;
+  height: 35px;
+}
+aside ul li:nth-child(5) a::before{
+  background-image: url(../img/rquick05.png);
+  width: 28px;
+  height: 38px;
+}
+aside ul li a::after{
+  /*! content: '온라인예약'; */
+  color: white;
+  font-size: 15px;
+}

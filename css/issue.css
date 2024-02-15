@@ -1,0 +1,51 @@
+#issue{
+}
+#issue .wrap{  
+  width: 100vw;
+}
+#issue .wrap h2{   
+  padding: 55px 0 45px;
+}
+#issue .wrap .back{   
+  width: 100%;
+  background-image: url(../img/issue_bg.jpg);
+  background-repeat: no-repeat;
+  height: 700px;
+}
+#issue .wrap .back ul{  
+  gap: 20px;
+  justify-content: center;
+}
+#issue .wrap .back ul li{  
+  background-color: white;
+  height: 544px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#issue .wrap .back ul li a{
+   
+}
+#issue .wrap .back ul li a figure{
+
+}
+#issue .wrap .back ul li a img{
+   
+}
+#issue .wrap .back ul li a h5{   
+  font-size: 25px;
+  padding: 20px 0;
+  font-weight: 300;
+  line-height: 1.2;
+}
+#issue .wrap .back ul li a h5 span{
+
+  font-weight: 600;
+}
+#issue .wrap .back ul li a figcaption{  
+  color: #a7a7a7;
+  font-size: 19px;
+  padding-top: 10px;
+  line-height: 1.2;
+}
