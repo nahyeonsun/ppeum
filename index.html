@@ -23,21 +23,26 @@
     <link rel="stylesheet" href="css/title.css">
     <link rel="stylesheet" href="css/ppeumtv.css">
     <link rel="stylesheet" href="css/real.css">
-    <link rel="stylesheet" href="css/spacel.css">
+    <link rel="stylesheet" href="css/space.css">
     <link rel="stylesheet" href="css/issue.css">
     <link rel="stylesheet" href="css/asid.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/response.css">
-    <!-- 제이쿼리 연결 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- 자바스크립트 -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-
+            $("header div.wrap ul.gnb li:nth-child(1) a").hover(function(){
+                $("header div.wrap .wgnb").stop().slideDown();
+            });
+            $("header div.wrap .wgnb").mouseleave(function(){
+                $(this).slideUp();
+            });
         });
     </script>
     <!-- slick -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
@@ -46,27 +51,33 @@
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 autoplay: true,
-                autoplaySpeed: 2000,
+                autoplaySpeed: 3000,
                 speed: 1000,
                 dots:true,
                 arrows:true,
                 fade: false
-            });
-            $('.spaceAni').slick({
-                centerMode: true,
-                centerPadding: '60px',
-                slidesToShow: 3,
             });
             $('.tvSlide').slick({
                 infinite: true,
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 autoplay: true,
-                autoplaySpeed: 2000,
-                speed:1000,
-                dots:true,
-                arrows:true,
+                autoplaySpeed: 3000,
+                speed: 1000,
+                dots:false,
+                arrows:true
             });
+            $('.spaceCenter').slick({
+                infinite: true,
+                autoplay: false,
+                dots:false,
+                arrows:true,
+                slidesToShow: 1,
+                SlidesToScroll: 1,
+                speed: 1500,
+                centerMode: true,
+                centerPadding: '30px'
+            })
         });
     </script>
 </head>
@@ -87,234 +98,236 @@
                 <li><a href="">PPEUM NETWORK </a></li>
                 <span></span> 
             </ul>
-            <div class="sub flex">
-                <div class="menu1">
-                    <h2 class="h6">쁘띠</h2>
-                    <ul>
-                        <li>
-                            <a href="">보톡스</a>
-                        </li>
-                        <li>
-                            <a href="">윤곽주사</a>
-                        </li>
-                        <li>
-                            <a href="">PS주사</a>
-                        </li>
-                        <li>
-                            <a href="">코 조각주사</a>
-                        </li>
-                        <li>
-                            <a href="">필러</a>
-                        <li>
-                            <a href="">큐오필플러스</a>
-                        </li>
-                        <li>
-                            <a href="">벨로테로</a>
-                        </li>
-                        <li>
-                            <a href="">하이코/바비코</a>
-                        </li>
-                        <li>
-                            <a href="">눈밑재배치주사</a>
-                        </li>
-                        <li>
-                            <a href="">필러 녹이는 주사</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menu2">
-                    <h2 class="h6">리프팅</h2>
-                    <ul>
-                        <li>
-                            <a href="">티타늄</a>
-                        </li>
-                        <li>
-                            <a href="">울쎄라</a>
-                        </li>
-                        <li>
-                            <a href="">볼뉴머</a>
-                        </li>
-                        <li>
-                            <a href="">올리지오X</a>
-                        </li>
-                        <li>
-                            <a href="">올리지오</a>
-                        </li>
-                        <li>
-                            <a href="">인모드리프팅</a>
-                        </li>
-                        <li>
-                            <a href="">슈링크유니버스</a>
-                        </li>
-                        <li>
-                            <a href="">리프테라2</a>
-                        </li>
-                        <li>
-                            <a href="">실리프팅</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menu3">
-                    <h2 class="h6">제모</h2>
-                    <ul>
-                        <li>
-                            <a href="">프리미엄여성제모</a>
-                        </li>
-                        <li>
-                            <a href="">프리미엄남성제모</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menu4">
-                    <h2 class="h6">바디/다이어트</h2>
-                    <ul>
-                        <li>
-                            <a href="">SS주사</a>
-                        </li>
-                        <li>
-                            <a href="">슬림컷주사</a>
-                        </li>
-                        <li>
-                            <a href="">다한증</a>
-                        </li>
-                        <li>
-                            <a href="">종아리 조각주사</a>
-                        </li>
-                        <li>
-                            <a href="">종아리 성형주사</a>
-                        </li>
-                        <li>
-                            <a href="">미니스커트 주사</a>
-                        </li>
-                        <li>
-                            <a href="">민소매 조각주사</a>
-                        </li>
-                        <li>
-                            <a href="">울핏</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menu5">
-                    <h2 class="h6">레이저</h2>
-                    <ul>
-                        <li>
-                            <a href="">점제거</a>
-                        </li>
-                        <li>
-                            <a href="">피코토닝</a>
-                        </li>
-                        <li>
-                            <a href="">클라리티레이저</a>
-                        </li>
-                        <li>
-                            <a href="">V레이저</a>
-                        </li>
-                        <li>
-                            <a href="">프락셀(아비오)</a>
-                        </li>
-                        <li>
-                            <a href="">피코프락셀</a>
-                        </li>
-                        <li>
-                            <a href="">아그네스</a>
-                        </li>
-                        <li>
-                            <a href="">알레그로</a>
-                        </li>
-                        <li>
-                            <a href="">실펌X</a>
-                        </li>
-                        <li>
-                            <a href="">골드PTT</a>
-                        </li>
-                        <li>
-                            <a href="">착색토닝</a>
-                        </li>
-                        <li>
-                            <a href="">아큐토닝</a>
-                        </li>
-                        <li>
-                            <a href="">피코문신제거</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menu6">
-                    <h2 class="h6">스킨부스터/케어</h2>
-                    <ul>
-                        <li>
-                            <a href="">필로드</a>
-                        </li>
-                        <li>
-                            <a href="">쥬베룩</a>
-                        </li>
-                        <li>
-                            <a href="">리쥬란힐러</a>
-                        </li>
-                        <li>
-                            <a href="">필메드 NCTF</a>
-                        </li>
-                        <li>
-                            <a href="">릴리이드 M</a>
-                        </li>
-                        <li>
-                            <a href="">엑소좀(G-MPF)</a>
-                        </li>
-                        <li>
-                            <a href="">물광주사</a>
-                        </li>
-                        <li>
-                            <a href="">LDM물방울리프팅</a>
-                        </li>
-                        <li>
-                            <a href="">아기앰플</a>
-                        </li>
-                        <li>
-                            <a href="">필링MALL</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menu7">
-                    <h2 class="h6">병원소개</h2>
-                    <ul>
-                        <li>
-                            <a href="">병원소개</a>
-                        </li>
-                        <li>
-                            <a href="">둘러보기</a>
-                        </li>
-                        <li>
-                            <a href="">의료진소개</a>
-                        </li>
-                        <li>
-                            <a href="">진료안내/오시는길</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menu8">
-                    <h2 class="h6">커뮤니티</h2>
-                    <ul>
-                        <li>
-                            <a href="">이벤트</a>
-                        </li>
-                        <li>
-                            <a href="">온라인예약</a>
-                        </li>
-                        <li>
-                            <a href="">카카오톡상담</a>
-                        </li>
-                        <li>
-                            <a href="">시술후기</a>
-                        </li>
-                        <li>
-                            <a href="">전후사진</a>
-                        </li>
-                        <li>
-                            <a href="">쁨MEDIA</a>
-                        </li>
-                        <li>
-                            <a href="">공지사항</a>
-                        </li>
-                    </ul>
+            <div class="wgnb flex">
+                <div class="sub flex">
+                    <div class="menu">
+                        <h2 class="h6">쁘띠</h2>
+                        <ul>
+                            <li>
+                                <a href="">보톡스</a>
+                            </li>
+                            <li>
+                                <a href="">윤곽주사</a>
+                            </li>
+                            <li>
+                                <a href="">PS주사</a>
+                            </li>
+                            <li>
+                                <a href="">코 조각주사</a>
+                            </li>
+                            <li>
+                                <a href="">필러</a>
+                            <li>
+                                <a href="">큐오필플러스</a>
+                            </li>
+                            <li>
+                                <a href="">벨로테로</a>
+                            </li>
+                            <li>
+                                <a href="">하이코/바비코</a>
+                            </li>
+                            <li>
+                                <a href="">눈밑재배치주사</a>
+                            </li>
+                            <li>
+                                <a href="">필러 녹이는 주사</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h2 class="h6">리프팅</h2>
+                        <ul>
+                            <li>
+                                <a href="">티타늄</a>
+                            </li>
+                            <li>
+                                <a href="">울쎄라</a>
+                            </li>
+                            <li>
+                                <a href="">볼뉴머</a>
+                            </li>
+                            <li>
+                                <a href="">올리지오X</a>
+                            </li>
+                            <li>
+                                <a href="">올리지오</a>
+                            </li>
+                            <li>
+                                <a href="">인모드리프팅</a>
+                            </li>
+                            <li>
+                                <a href="">슈링크유니버스</a>
+                            </li>
+                            <li>
+                                <a href="">리프테라2</a>
+                            </li>
+                            <li>
+                                <a href="">실리프팅</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h2 class="h6">제모</h2>
+                        <ul>
+                            <li>
+                                <a href="">프리미엄여성제모</a>
+                            </li>
+                            <li>
+                                <a href="">프리미엄남성제모</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h2 class="h6">바디/다이어트</h2>
+                        <ul>
+                            <li>
+                                <a href="">SS주사</a>
+                            </li>
+                            <li>
+                                <a href="">슬림컷주사</a>
+                            </li>
+                            <li>
+                                <a href="">다한증</a>
+                            </li>
+                            <li>
+                                <a href="">종아리 조각주사</a>
+                            </li>
+                            <li>
+                                <a href="">종아리 성형주사</a>
+                            </li>
+                            <li>
+                                <a href="">미니스커트 주사</a>
+                            </li>
+                            <li>
+                                <a href="">민소매 조각주사</a>
+                            </li>
+                            <li>
+                                <a href="">울핏</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h2 class="h6">레이저</h2>
+                        <ul>
+                            <li>
+                                <a href="">점제거</a>
+                            </li>
+                            <li>
+                                <a href="">피코토닝</a>
+                            </li>
+                            <li>
+                                <a href="">클라리티레이저</a>
+                            </li>
+                            <li>
+                                <a href="">V레이저</a>
+                            </li>
+                            <li>
+                                <a href="">프락셀(아비오)</a>
+                            </li>
+                            <li>
+                                <a href="">피코프락셀</a>
+                            </li>
+                            <li>
+                                <a href="">아그네스</a>
+                            </li>
+                            <li>
+                                <a href="">알레그로</a>
+                            </li>
+                            <li>
+                                <a href="">실펌X</a>
+                            </li>
+                            <li>
+                                <a href="">골드PTT</a>
+                            </li>
+                            <li>
+                                <a href="">착색토닝</a>
+                            </li>
+                            <li>
+                                <a href="">아큐토닝</a>
+                            </li>
+                            <li>
+                                <a href="">피코문신제거</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h2 class="h6">스킨부스터/케어</h2>
+                        <ul>
+                            <li>
+                                <a href="">필로드</a>
+                            </li>
+                            <li>
+                                <a href="">쥬베룩</a>
+                            </li>
+                            <li>
+                                <a href="">리쥬란힐러</a>
+                            </li>
+                            <li>
+                                <a href="">필메드 NCTF</a>
+                            </li>
+                            <li>
+                                <a href="">릴리이드 M</a>
+                            </li>
+                            <li>
+                                <a href="">엑소좀(G-MPF)</a>
+                            </li>
+                            <li>
+                                <a href="">물광주사</a>
+                            </li>
+                            <li>
+                                <a href="">LDM물방울리프팅</a>
+                            </li>
+                            <li>
+                                <a href="">아기앰플</a>
+                            </li>
+                            <li>
+                                <a href="">필링MALL</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h2 class="h6">병원소개</h2>
+                        <ul>
+                            <li>
+                                <a href="">병원소개</a>
+                            </li>
+                            <li>
+                                <a href="">둘러보기</a>
+                            </li>
+                            <li>
+                                <a href="">의료진소개</a>
+                            </li>
+                            <li>
+                                <a href="">진료안내/오시는길</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h2 class="h6">커뮤니티</h2>
+                        <ul>
+                            <li>
+                                <a href="">이벤트</a>
+                            </li>
+                            <li>
+                                <a href="">온라인예약</a>
+                            </li>
+                            <li>
+                                <a href="">카카오톡상담</a>
+                            </li>
+                            <li>
+                                <a href="">시술후기</a>
+                            </li>
+                            <li>
+                                <a href="">전후사진</a>
+                            </li>
+                            <li>
+                                <a href="">쁨MEDIA</a>
+                            </li>
+                            <li>
+                                <a href="">공지사항</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -336,67 +349,67 @@
         <section id="ppeumtv">
             <div class="wrap flex center">
                 <h2 class="h5">ppeum tv</h2>
-                <div class="vidio flex center h560 tvSlide">
-                    <a href="">
-                        <figure>
+                <div class="vidio tvSlide">
+                    <figure>
+                        <a href="">
                             <img src="img/vidio1.jpg" alt="">
                             <figcaption>울쎄라. 이 영상 한편만 보시면 됩니다!</figcaption>
-                        </figure>
-                    </a>
-                    <a href="">
-                        <figure>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
                             <img src="img/vidio2.jpg" alt="">
                             <figcaption>써마지 FLX 피부과에서 레이저 하나만 받는다 하면 이것!</figcaption>
-                        </figure>
-                    </a>
-                    <a href="">
-                        <figure>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
                             <img src="img/vidio3.jpg" alt="">
                             <figcaption>필러1편. 필러란 무엇인가?</figcaption>
-                        </figure>
-                    </a>
-                    <a href="">
-                        <figure>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
                             <img src="img/vidio4.jpg" alt="">
                             <figcaption>10분안에 수술없이 눈밑지방 고민해결, 이노플러스!</figcaption>
-                        </figure>
-                    </a>
-                    <a href="" class="hide">
-                        <figure>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
                             <img src="img/vidio5.jpg" alt="">
                             <figcaption>무통 리쥬란이 있다고? 원장이 직접 받아봤습니다.</figcaption>
-                        </figure>
-                    </a>
-                    <a href="" class="hide">
-                        <figure>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
                             <img src="img/vidio6.jpg" alt="">
                             <figcaption>지방분해주사, 다이어트로 안빠지는 부위 살을 쏙! !</figcaption>
-                        </figure>
-                    </a>
-                    <a href="" class="hide">
-                        <figure>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
                             <img src="img/vidio7.jpg" alt="">
                             <figcaption>올리지오는 올리지오! K-써마지 A to Z 공개</figcaption>
-                        </figure>
-                    </a>
-                    <a href="" class="hide">
-                        <figure>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
                             <img src="img/vidio8.jpg" alt="">
                             <figcaption>실펌 레이저. 여드름, 모공, 탄력, 흉터, 기미, 홍조 개선에 OK!?</figcaption>
-                        </figure>
-                    </a>
-                    <a href="" class="hide">
-                        <figure>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
                             <img src="img/vidio9.jpg" alt="">
                             <figcaption>LDM 피부관리 하나만 받는다면 이것!</figcaption>
-                        </figure>
-                    </a>
-                    <a href="" class="hide">
-                        <figure>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
                             <img src="img/vidio10.jpg" alt="">
                             <figcaption>골드PTT 얼굴에 금가루?? 무슨작용을 하나요!</figcaption>
-                        </figure>
-                    </a>
+                        </a>
+                    </figure>
                 </div>
             </div>
         </section>
@@ -407,42 +420,27 @@
                 <ul class="flex">
                     <li>
                         <a href="">
-                            <figure>
-                                <img src="img/real1.jpg" alt="">
-                                <figcaption>VIEW</figcaption>
-                            </figure>
+                            <p>VIEW</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <figure>
-                                <img src="img/real2.jpg" alt="">
-                                <figcaption>VIEW</figcaption>
-                            </figure>
+                            <p>VIEW</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <figure>
-                                <img src="img/real3.jpg" alt="">
-                                <figcaption>VIEW</figcaption>
-                            </figure>
+                        <p>VIEW</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <figure>
-                                <img src="img/real4.jpg" alt="">
-                                <figcaption>VIEW</figcaption>
-                            </figure>
+                            <p>VIEW</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <figure>
-                                <img src="img/real5.jpg" alt="">
-                                <figcaption>VIEW</figcaption>
-                            </figure>
+                            <p>VIEW</p>
                         </a>
                     </li>
                 </ul>
@@ -454,232 +452,176 @@
                 <h2 class="h5">ppeum space</h2>
                 <p class="h3">감각적이고 트렌디한 공간을 만나보세요</p>
                 <div class="background flex center">
-                    <ul class="flex spaceAni">
-                        <li>
+                    <div class="group spaceCenter">
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum1.jpg" alt="">
-                                    <figcaption>신논현 메가스토어점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum1.jpg" alt="">
+                                <figcaption>신논현 메가스토어점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum2.jpg" alt="">
-                                    <figcaption>강남 스탠다드점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum2.jpg" alt="">
+                                <figcaption>강남 스탠다드점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum3.jpg" alt="">
-                                    <figcaption>일산점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum3.jpg" alt="">
+                                <figcaption>일산점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum4.jpg" alt="">
-                                    <figcaption>홍대점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum4.jpg" alt="">
+                                <figcaption>홍대점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum5.jpg" alt="">
-                                    <figcaption>수원인계점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum5.jpg" alt="">
+                                <figcaption>수원인계점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum6.jpg" alt="">
-                                    <figcaption>분당점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum6.jpg" alt="">
+                                <figcaption>분당점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum7.jpg" alt="">
-                                    <figcaption>인천본점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum7.jpg" alt="">
+                                <figcaption>인천본점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum8.jpg" alt="">
-                                    <figcaption>범계점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum8.jpg" alt="">
+                                <figcaption>범계점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum9.jpg" alt="">
-                                    <figcaption>천호점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum9.jpg" alt="">
+                                <figcaption>천호점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum10.jpg" alt="">
-                                    <figcaption>부평점</figcaption>
-                                </figure>
-                                 </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum11.jpg" alt="">
-                                    <figcaption>명동점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum10.jpg" alt="">
+                                <figcaption>부평점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum21.jpg" alt="">
-                                    <figcaption>건대점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum11.jpg" alt="">
+                                <figcaption>명동점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum13.jpg" alt="">
-                                    <figcaption>안산점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum21.jpg" alt="">
+                                <figcaption>건대점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum14.jpg" alt="">
-                                    <figcaption>부산점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum13.jpg" alt="">
+                                <figcaption>안산점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum15.jpg" alt="">
-                                    <figcaption>대구동성로점(1호점)</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum14.jpg" alt="">
+                                <figcaption>부산점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum16.jpg" alt="">
-                                    <figcaption>노원점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum15.jpg" alt="">
+                                <figcaption>대구동성로점(1호점)</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum17.jpg" alt="">
-                                    <figcaption>동탄점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum16.jpg" alt="">
+                                <figcaption>노원점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum18.jpg" alt="">
-                                    <figcaption>수원역점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum17.jpg" alt="">
+                                <figcaption>동탄점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum19.jpg" alt="">
-                                    <figcaption>서울대입구점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum18.jpg" alt="">
+                                <figcaption>수원역점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum20.jpg" alt="">
-                                    <figcaption>대구동성로점(2호점)</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum19.jpg" alt="">
+                                <figcaption>서울대입구점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum21.jpg" alt="">
-                                    <figcaption>잠실점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum20.jpg" alt="">
+                                <figcaption>대구동성로점(2호점)</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum22.jpg" alt="">
-                                    <figcaption>대전점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum21.jpg" alt="">
+                                <figcaption>잠실점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum23.jpg" alt="">
-                                    <figcaption>천안점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum22.jpg" alt="">
+                                <figcaption>대전점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum24.jpg" alt="">
-                                    <figcaption>제주점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum23.jpg" alt="">
+                                <figcaption>천안점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum25.jpg" alt="">
-                                    <figcaption>하남미사점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum24.jpg" alt="">
+                                <figcaption>제주점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum26.jpg" alt="">
-                                    <figcaption>발산점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum25.jpg" alt="">
+                                <figcaption>하남미사점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum27.jpg" alt="">
-                                    <figcaption>부천점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum26.jpg" alt="">
+                                <figcaption>발산점</figcaption>
                             </a>
-                        </li>
-                        <li>
+                        </figure>
+                        <figure>
                             <a href="">
-                                <figure>
-                                    <img src="img/space_ppeum28.jpg" alt="">
-                                    <figcaption>글로벌점</figcaption>
-                                </figure>
+                                <img src="img/space_ppeum27.jpg" alt="">
+                                <figcaption>부천점</figcaption>
                             </a>
-                        </li>
-                    </ul>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <img src="img/space_ppeum28.jpg" alt="">
+                                <figcaption>글로벌점</figcaption>
+                            </a>
+                        </figure>
+                        </div>
                 </div>
             </div>
         </section>

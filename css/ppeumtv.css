@@ -1,32 +1,50 @@
-body{ 
-  overflow-x: hidden;
-}
-main{
+section#ppeumtv{
   
 }
-section#ppeumtv{
-  height: 560px;
-}
 section#ppeumtv .wrap{
-  height: 100%;
+
 }
 section#ppeumtv .wrap h2{
- 
+  padding: 40px 0;
 }
-section#ppeumtv .wrap .vidio{
-  gap: 28px;
+section#ppeumtv .wrap .vidio {
+  display: block;
+  width: 100%;
 }
-section#ppeumtv .wrap .vidio a{
+section#ppeumtv .wrap .vidio figure:not(:nth-child(1)){
+  margin-left: 20px;
+}
+section#ppeumtv .wrap .vidio figure img{
 
 }
-section#ppeumtv .wrap .vidio a figure{
-
-}
-section#ppeumtv .wrap .vidio a figure img{
-
-}
-section#ppeumtv .wrap .vidio a figure figcaption{
+section#ppeumtv .wrap .vidio figure figcaption{
   text-align: center;
   font-size: 22px;
   padding-top: 12px;
+}
+/* 슬릭 */
+.slick-prev{  
+  left: -53px !important;
+}
+.slick-prev::before{  
+  background-image: url(../img/ico_tv_arrow.png);
+  width: 24px;
+  height: 44px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 0 !important;
+}
+.slick-next{
+  right: -53px !important; 
+}
+.slick-next::before{
+  background-image: url(../img/ico_tv_arrow.png);
+  width: 24px;
+  height: 44px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 0 !important; 
+  transform: rotate(180deg);
 }
