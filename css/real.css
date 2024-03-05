@@ -1,8 +1,8 @@
 section#real{
   height: 545px;
-  padding-top: 50px;
-  padding-bottom: 50px;
   box-sizing: border-box;
+  padding: 50px 0;
+  margin: 50px 0;
 }
 section#real div.wrap{   
   height: 100%;

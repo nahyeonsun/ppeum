@@ -117,7 +117,7 @@ header div.wrap ul.snb .close .height{
   position: absolute;
   top: 13px;
   left: calc(26px / 3);
-  rotate: 90deg;
+  transform: rotate(90deg);
 }
 header div.wrap .wgnb{
   width: 1100px;
@@ -157,6 +157,7 @@ header div.wrap .wgnb .sub div h2{
 }
 header div.wrap .wgnb .sub div h2:hover{
   color: #f9538b;
+  transition: 0.3s;
 }
 header div.wrap .wgnb .sub div ul{
   
@@ -169,6 +170,7 @@ header div.wrap .wgnb .sub div ul li a{
 } 
 header div.wrap .wgnb .sub div ul li a:hover{
   color: #f9538b;
+  transition: 0.3s;
 }
 header .listsub{
   position: absolute;
