@@ -96,24 +96,28 @@ header div.wrap ul.snb li:nth-child(2) a{
 header div.wrap ul.snb li:nth-child(3) a{
   font-weight: 500
 }
-header div.wrap ul.snb span{
+header div.wrap ul.snb .close{
   width: 26px;
   height: 26px;
   border-radius: 50%;
   background-color: #f9538b;
   position: relative;
+
 }
-header div.wrap ul.snb span::before{
-  rotate: 90deg;
-}
-header div.wrap ul.snb span::before,
-header div.wrap ul.snb span::after{
-  content: "";
+header div.wrap ul.snb .close .length{
   border-bottom: 1px solid #fff;
   width: 11px;
   position: absolute;
   top: 13px;
   left: calc(26px / 3)
+}
+header div.wrap ul.snb .close .height{
+  border-bottom: 1px solid #fff;
+  width: 11px;
+  position: absolute;
+  top: 13px;
+  left: calc(26px / 3);
+  rotate: 90deg;
 }
 header div.wrap .wgnb{
   width: 1100px;
@@ -152,7 +156,7 @@ header div.wrap .wgnb .sub div h2{
   padding-bottom: 10px;
 }
 header div.wrap .wgnb .sub div h2:hover{
-    color: #f9538b;
+  color: #f9538b;
 }
 header div.wrap .wgnb .sub div ul{
   
@@ -162,4 +166,77 @@ header div.wrap .wgnb .sub div ul li{
 }
 header div.wrap .wgnb .sub div ul li a{
   font-size: 15px;
-}    
+} 
+header div.wrap .wgnb .sub div ul li a:hover{
+  color: #f9538b;
+}
+header .listsub{
+  position: absolute;
+  right: 0;
+  display: none;
+  top: 108px;
+}
+header .listsub>div{
+  width: 200px;
+  background-color: #f9538b;
+  box-sizing: border-box;
+}
+header .listsub>div h2{  
+  line-height: 4.2;
+  position: relative;
+}
+header .listsub>div h2:not(:last-child)::after{
+  content: "";
+  border-bottom: 1px solid #fff;
+  display: block;
+  width: 100%;
+}
+header .listsub>div h2 a{
+  color: #fff;
+  font-size: 18px;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+header .listsub > div h2 a::before{
+  content: "";
+  display: inline-block;
+  border-right: 1px solid #fff;
+  height: 20px;
+  position: absolute;
+  right: 14px;
+  bottom: 26px;
+  cursor: pointer;
+}
+header .listsub > div h2 a::after{
+  content: "";
+  display: inline-block;
+  border-right: 1px solid #fff;
+  height: 20px;
+  position: absolute;
+  right: 14px;
+  bottom: 26px;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+header .listsub > div ul{
+  /*! display: block; */
+  background-color: #fff;
+  padding: 10px 25px;
+}
+header .listsub > div ul li{
+  line-height: 2;
+  font-size: 14px;
+}
+header .listsub > div ul li a{
+  color: #575757;
+}
+.curruntG{
+  background-color: #c1c1c1;
+  border: none;
+}
+.minusC{
+  display: none;
+}
+.show{
+  display: block !important;
+}

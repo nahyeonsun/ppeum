@@ -4,16 +4,32 @@ aside{
   top: calc(50% - 47px);
   transform: translateY(-50%);
   z-index: 1;
+  display: none;
 }
 aside ul{
-
+  border-bottom: 1px solid #e0e0e0;
 }
 aside ul li{
   width: 90px;
   height: 96px;
   background-color: #fff;
 }
-aside ul li:not(:nth-child(1)) a::after{
+aside ul li:not(:nth-child(1)){
+  border-left: 1px solid #e0e0e0;
+}
+aside ul li:nth-child(2) a::after{
+  content: "";
+  border-top: 1px solid #e0e0e0;
+  display: block;
+  width: 75%;
+}
+aside ul li:nth-child(3) a::after{
+  content: "";
+  border-top: 1px solid #e0e0e0;
+  display: block;
+  width: 75%;
+}
+aside ul li:nth-child(4) a::after{
   content: "";
   border-top: 1px solid #e0e0e0;
   display: block;
@@ -63,4 +79,5 @@ aside ul li:nth-child(4) a::before{
 }
 aside ul li:nth-child(5) a::before{
   background-image: url(../img/rquick05.png);
+  transform: translateY(33%);
 }

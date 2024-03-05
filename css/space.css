@@ -1,8 +1,8 @@
 section#space {
-  overflow-x: hidden;
+
 }
 section#space .wrap {
-  width: 100vw;
+  width: 100%;
 }
 section#space .wrap h2{  
  
@@ -23,18 +23,51 @@ section#space .wrap .background .group{
    display: block;
    width: 100%;
 }
+section#space .slick-prev { 
+  left: 20% !important;
+  width: 24px !important;
+  height: 44px !important;
+}
+section#space .slick-prev::before{  
+  background-image: url(../img/btn_prev.png);
+  width: 24px;
+  height: 44px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 0 !important;
+}
 section#space .wrap .background .group figure{
- 
+  display: block;
+}
+section#space .slick-current {
+  opacity: 1 !important;
+}
+section#space .slick-slide{
+  opacity: 0.5;
 }
 section#space .wrap .background .group figure a{
- 
+  display: block;
+  padding: 0 100px;
 }
 section#space .wrap .background .group figure a img {
- 
+  width: 100%;
 }
 section#space .wrap .background .group figure a figcaption {
   text-align: center;
   padding-top: 25px;
   font-size: 20px;
   font-weight: 300;
+}
+section#space .slick-next{
+  right: 20% !important; 
+}
+section#space .slick-next::before{
+  background-image: url(../img/btn_next.png);
+  width: 24px;
+  height: 44px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 0 !important; 
 }

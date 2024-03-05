@@ -38,6 +38,11 @@
             $("header div.wrap .wgnb").mouseleave(function(){
                 $(this).slideUp();
             });
+            $("header div.wrap ul.snb .close").click(function(){
+                $("header div.wrap ul.snb .close .height").toggleClass("minusC");
+                return false;
+                $("header .listsub").addClass("show");
+            });
         });
     </script>
     <!-- slick -->
@@ -69,14 +74,14 @@
             });
             $('.spaceCenter').slick({
                 infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
                 autoplay: false,
+                speed:1000,
                 dots:false,
                 arrows:true,
-                slidesToShow: 1,
-                SlidesToScroll: 1,
-                speed: 1500,
                 centerMode: true,
-                centerPadding: '30px'
+                centerPadding: '20%',
             })
         });
     </script>
@@ -96,7 +101,10 @@
                 <li><a href="">진료시간 변경 및 일···</a></li>
                 <li><a href="">로그인</a></li>
                 <li><a href="">PPEUM NETWORK </a></li>
-                <span></span> 
+                <a  class="close" href="">
+                    <span class="length"></span> 
+                    <span class="height"></span> 
+                </a>
             </ul>
             <div class="wgnb flex">
                 <div class="sub flex">
@@ -330,6 +338,53 @@
                     </div>
                 </div>
             </div>
+            <div class="listsub">
+                <div class="flex column">
+                    <h2><a href="">서울권</a></h2>
+                    <ul class="hide">
+                        <li><a href="">신논현 메가스토어점</a></li>
+                        <li><a href="">글로벌 강남점</a></li>
+                        <li><a href="">명동점</a></li>
+                        <li><a href="">홍대점</a></li>
+                        <li><a href="">천호점</a></li>
+                        <li><a href="">건대점</a></li>
+                        <li><a href="">노원점</a></li>
+                        <li><a href="">서울대입구점</a></li>
+                        <li><a href="">잠실점</a></li>
+                        <li><a href="">발산점</a></li>
+                    </ul>
+                    <h2><a href="">경기/인천권</a></h2>
+                    <ul class="hide">
+                        <li><a href="">일산점</a></li>
+                        <li><a href="">수원인계점</a></li>
+                        <li><a href="">안산점</a></li>
+                        <li><a href="">인천본점</a></li>
+                        <li><a href="">분당점</a></li>
+                        <li><a href="">범계점</a></li>
+                        <li><a href="">부평점</a></li>
+                        <li><a href="">동탄점</a></li>
+                        <li><a href="">수원역점</a></li>
+                        <li><a href="">하남미사점</a></li>
+                        <li><a href="">부천점</a></li>
+                    </ul>
+                    <h2><a href="">대전/충청권</a></h2>
+                    <ul class="hide">
+                        <li><a href="">대전점</a></li>
+                        <li><a href="">천안점</a></li>
+                    </ul>
+                    <h2><a href="">울산/경상권</a></h2>
+                    <ul class="hide">
+                        <li><a href="">울산점</a></li>
+                        <li><a href="">부산점</a></li>
+                        <li><a href="">대구중앙로점(1호점)</a></li>
+                        <li><a href="">대구동성로점(2호점)</a></li>
+                    </ul>
+                    <h2><a href="">제주</a></h2>
+                    <ul class="hide">
+                        <li><a href="">제주점</a></li>
+                    </ul>
+                </ul>
+            </div>
         </div>
     </header>
     <!-- 타이틀영역 -->
@@ -453,12 +508,6 @@
                 <p class="h3">감각적이고 트렌디한 공간을 만나보세요</p>
                 <div class="background flex center">
                     <div class="group spaceCenter">
-                        <figure>
-                            <a href="">
-                                <img src="img/space_ppeum1.jpg" alt="">
-                                <figcaption>신논현 메가스토어점</figcaption>
-                            </a>
-                        </figure>
                         <figure>
                             <a href="">
                                 <img src="img/space_ppeum2.jpg" alt="">
@@ -619,6 +668,12 @@
                             <a href="">
                                 <img src="img/space_ppeum28.jpg" alt="">
                                 <figcaption>글로벌점</figcaption>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <img src="img/space_ppeum1.jpg" alt="">
+                                <figcaption>신논현 메가스토어점</figcaption>
                             </a>
                         </figure>
                         </div>

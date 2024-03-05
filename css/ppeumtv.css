@@ -11,6 +11,18 @@ section#ppeumtv .wrap .vidio {
   display: block;
   width: 100%;
 }
+section#ppeumtv .slick-prev{  
+  left: -53px !important;
+}
+section#ppeumtv .slick-prev::before{  
+  background-image: url(../img/ico_tv_arrow.png);
+  width: 24px;
+  height: 44px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 0 !important;
+}
 section#ppeumtv .wrap .vidio figure:not(:nth-child(1)){
   margin-left: 20px;
 }
@@ -22,23 +34,10 @@ section#ppeumtv .wrap .vidio figure figcaption{
   font-size: 22px;
   padding-top: 12px;
 }
-/* 슬릭 */
-.slick-prev{  
-  left: -53px !important;
-}
-.slick-prev::before{  
-  background-image: url(../img/ico_tv_arrow.png);
-  width: 24px;
-  height: 44px;
-  display: block;
-  background-repeat: no-repeat;
-  background-size: contain;
-  font-size: 0 !important;
-}
-.slick-next{
+section#ppeumtv .slick-next{
   right: -53px !important; 
 }
-.slick-next::before{
+section#ppeumtv .slick-next::before{
   background-image: url(../img/ico_tv_arrow.png);
   width: 24px;
   height: 44px;
