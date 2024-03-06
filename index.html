@@ -49,6 +49,7 @@
                 $(this).toggleClass("curruntG");
                 $(this).next("ul").stop().slideToggle();
                 $(this).parent().siblings().find("ul").stop().slideUp();
+                $("header .familysite > div h2").not(this).removeClass("curruntG").next("ul").stop().slideUp();
             });
         // 팝업창
             $("header div.wrap ul.snb li:nth-child(1)").click(function(){
