@@ -32,22 +32,31 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
+        // 메뉴
             $("header div.wrap ul.gnb li:nth-child(1) a").hover(function(){
                 $("header div.wrap .wgnb").stop().slideDown();
             });
             $("header div.wrap .wgnb").mouseleave(function(){
                 $(this).slideUp();
             });
+        // 패밀리사이트
             $("header div.wrap ul.snb .close").click(function(){
                 $("header div.wrap ul.snb .close .height").toggleClass("minusC");
                 $("header .listsub").stop().slideToggle();
                 return false;
             });
-
             $("header .listsub > div h2").click(function(){
                 $(this).toggleClass("curruntG");
                 $(this).next("ul").stop().slideToggle();
                 $(this).parent().siblings().find("ul").stop().slideUp();
+            });
+        // 팝업창
+            $("header div.wrap ul.snb li:nth-child(1)").click(function(){
+                $("header .popup").addClass("show");
+                return false;
+            });
+            $("header .popup img.close").click(function(){
+                $("header .popup").toggleClass("show");
             });
         });
     </script>
@@ -390,6 +399,10 @@
                         <li><a href="">제주점</a></li>
                     </ul>
                 </div>
+            </div>
+            <div class="popup hide">
+                <img class="pop" src="img/pop03.jpg" alt="">
+                <img class="close"  src="img/btn_close.jpg" alt="">
             </div>
         </div>
     </header>

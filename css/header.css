@@ -63,21 +63,17 @@ header div.wrap ul.snb li:nth-child(1){
   border-radius: 20px;
   background-color: white;
   height: 33px;
-  /*! text-overflow: ellipsis; */
-  /*! overflow: hidden; */
+  color: #545454;
+  font-size: 15px;
+  font-weight: 500;
   border: 1px solid #ccc;
 }
 header div.wrap ul.snb li a{   
   padding: 0px 12px;
   font-size: 14px;
+  color: #545454;
 }
 header div.wrap ul.snb li:nth-child(1) a{
-  color: #545454;
-  font-size: 15px;
-  font-weight: 500;
-  /*! text-overflow: ellipsis; */
-  /*! overflow: hidden; */
-  /*! white-space: nowrap; */
   display: block;
   line-height: 33px;
 }
@@ -228,6 +224,20 @@ header .listsub > div ul li a:hover{
   color: #f9538b;
   text-decoration: underline;
 }
+header .popup{ 
+  position: absolute;
+  top: 108px;
+  right: 150px;
+}
+header .popup img.pop{
+  
+}
+header .popup img.close{
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
 .curruntG{
   background-color: #c1c1c1;    
 }
@@ -235,5 +245,5 @@ header .listsub > div ul li a:hover{
   display: none;
 }
 .show{
-  display: block !important;
+  display: initial;
 }
