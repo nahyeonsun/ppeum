@@ -40,8 +40,14 @@
             });
             $("header div.wrap ul.snb .close").click(function(){
                 $("header div.wrap ul.snb .close .height").toggleClass("minusC");
+                $("header .listsub").stop().slideToggle();
                 return false;
-                $("header .listsub").addClass("show");
+            });
+
+            $("header .listsub > div h2").click(function(){
+                $(this).toggleClass("curruntG");
+                $(this).next("ul").stop().slideToggle();
+                $(this).parent().siblings().find("ul").stop().slideUp();
             });
         });
     </script>
@@ -340,7 +346,7 @@
             </div>
             <div class="listsub">
                 <div class="flex column">
-                    <h2><a href="">서울권</a></h2>
+                    <h2>서울권</h2>
                     <ul class="hide">
                         <li><a href="">신논현 메가스토어점</a></li>
                         <li><a href="">글로벌 강남점</a></li>
@@ -353,7 +359,7 @@
                         <li><a href="">잠실점</a></li>
                         <li><a href="">발산점</a></li>
                     </ul>
-                    <h2><a href="">경기/인천권</a></h2>
+                    <h2>경기/인천권</h2>
                     <ul class="hide">
                         <li><a href="">일산점</a></li>
                         <li><a href="">수원인계점</a></li>
@@ -367,19 +373,19 @@
                         <li><a href="">하남미사점</a></li>
                         <li><a href="">부천점</a></li>
                     </ul>
-                    <h2><a href="">대전/충청권</a></h2>
+                    <h2>대전/충청권</h2>
                     <ul class="hide">
                         <li><a href="">대전점</a></li>
                         <li><a href="">천안점</a></li>
                     </ul>
-                    <h2><a href="">울산/경상권</a></h2>
+                    <h2>울산/경상권</h2>
                     <ul class="hide">
                         <li><a href="">울산점</a></li>
                         <li><a href="">부산점</a></li>
                         <li><a href="">대구중앙로점(1호점)</a></li>
                         <li><a href="">대구동성로점(2호점)</a></li>
                     </ul>
-                    <h2><a href="">제주</a></h2>
+                    <h2>제주</h2>
                     <ul class="hide">
                         <li><a href="">제주점</a></li>
                     </ul>

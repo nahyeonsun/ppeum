@@ -182,59 +182,54 @@ header .listsub>div{
   width: 200px;
   background-color: #f9538b;
   box-sizing: border-box;
+  padding: 0 25px;
 }
 header .listsub>div h2{  
   line-height: 4.2;
   position: relative;
-}
-header .listsub>div h2:not(:last-child)::after{
-  content: "";
-  border-bottom: 1px solid #fff;
-  display: block;
-  width: 100%;
-}
-header .listsub>div h2 a{
   color: #fff;
   font-size: 18px;
+  margin: 0 -25px;
   padding: 0 25px;
-  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.2s;
 }
-header .listsub > div h2 a::before{
+header .listsub>div h2:not(:first-child){
+  border-top: 1px solid #fff;
+}
+header .listsub>div h2::after{
   content: "";
   display: inline-block;
-  border-right: 1px solid #fff;
+  background-image: url(../img/add.png);
+  width: 20px;
   height: 20px;
-  position: absolute;
-  right: 14px;
-  bottom: 26px;
-  cursor: pointer;
+  background-size: contain;
 }
-header .listsub > div h2 a::after{
-  content: "";
-  display: inline-block;
-  border-right: 1px solid #fff;
-  height: 20px;
-  position: absolute;
-  right: 14px;
-  bottom: 26px;
-  transform: rotate(90deg);
-  cursor: pointer;
+header .listsub>div h2.curruntG::after{
+  background-image: url(../img/remove.png)
 }
 header .listsub > div ul{
-  /*! display: block; */
   background-color: #fff;
-  padding: 10px 25px;
+  margin: 0 -25px;
+  padding: 0 25px;
 }
 header .listsub > div ul li{
-  line-height: 2;
+  line-height: 2.5;
   font-size: 14px;
 }
 header .listsub > div ul li a{
   color: #575757;
+  font-size: 15px;
+}
+header .listsub > div ul li a:hover{
+  color: #f9538b;
+  text-decoration: underline;
 }
 .curruntG{
-  background-color: #c1c1c1;
-  border: none;
+  background-color: #c1c1c1;    
 }
 .minusC{
   display: none;
