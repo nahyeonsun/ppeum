@@ -42,10 +42,10 @@
         // 패밀리사이트
             $("header div.wrap ul.snb .close").click(function(){
                 $("header div.wrap ul.snb .close .height").toggleClass("minusC");
-                $("header .listsub").stop().slideToggle();
+                $("header .familysite").stop().slideToggle();
                 return false;
             });
-            $("header .listsub > div h2").click(function(){
+            $("header .familysite > div h2").click(function(){
                 $(this).toggleClass("curruntG");
                 $(this).next("ul").stop().slideToggle();
                 $(this).parent().siblings().find("ul").stop().slideUp();
@@ -353,7 +353,7 @@
                     </div>
                 </div>
             </div>
-            <div class="listsub">
+            <div class="familysite">
                 <div class="flex column">
                     <h2>서울권</h2>
                     <ul class="hide">

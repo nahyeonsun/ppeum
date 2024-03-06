@@ -168,19 +168,19 @@ header div.wrap .wgnb .sub div ul li a:hover{
   color: #f9538b;
   transition: 0.3s;
 }
-header .listsub{
+header .familysite{
   position: absolute;
   right: 0;
   display: none;
   top: 108px;
 }
-header .listsub>div{
+header .familysite>div{
   width: 200px;
   background-color: #f9538b;
   box-sizing: border-box;
   padding: 0 25px;
 }
-header .listsub>div h2{  
+header .familysite>div h2{  
   line-height: 4.2;
   position: relative;
   color: #fff;
@@ -193,10 +193,10 @@ header .listsub>div h2{
   justify-content: space-between;
   transition: 0.2s;
 }
-header .listsub>div h2:not(:first-child){
+header .familysite>div h2:not(:first-child){
   border-top: 1px solid #fff;
 }
-header .listsub>div h2::after{
+header .familysite>div h2::after{
   content: "";
   display: inline-block;
   background-image: url(../img/add.png);
@@ -204,23 +204,23 @@ header .listsub>div h2::after{
   height: 20px;
   background-size: contain;
 }
-header .listsub>div h2.curruntG::after{
+header .familysite>div h2.curruntG::after{
   background-image: url(../img/remove.png)
 }
-header .listsub > div ul{
+header .familysite > div ul{
   background-color: #fff;
   margin: 0 -25px;
   padding: 0 25px;
 }
-header .listsub > div ul li{
+header .familysite > div ul li{
   line-height: 2.5;
   font-size: 14px;
 }
-header .listsub > div ul li a{
+header .familysite > div ul li a{
   color: #575757;
   font-size: 15px;
 }
-header .listsub > div ul li a:hover{
+header .familysite > div ul li a:hover{
   color: #f9538b;
   text-decoration: underline;
 }
@@ -246,4 +246,7 @@ header .popup img.close{
 }
 .show{
   display: initial;
+}
+.closeH{
+  display: none;
 }
