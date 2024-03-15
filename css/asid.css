@@ -3,7 +3,6 @@ aside{
   right: 0px;
   top: calc(50% - 47px);
   transform: translateY(-50%);
-  z-index: 1;
 }
 aside ul{
   border-bottom: 1px solid #e0e0e0;
